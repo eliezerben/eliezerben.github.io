@@ -24,7 +24,7 @@ var options_1 = {
     autoplay: false,
     preload: 'metadata'
 };
-var p1 = ePlayer.darkTheme('p1', options, playlist_1);
+var p1 = ePlayer.darkTheme('p1', options_1, playlist_1);
 
 
 var playlist_2 = [
@@ -45,7 +45,7 @@ var playlist_2 = [
         name: "Sunny"
     }
 ];
-var options = {
+var options_2 = {
     playlist: true,
     repeat: 'off',
     shuffle: 'on',
