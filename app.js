@@ -22,7 +22,7 @@ var options_1 = {
     shuffle: 'off',
     volume: 0.7,
     autoplay: false,
-    preload: 'metadata'
+    preload: 'auto'
 };
 var p1 = ePlayer.darkTheme('p1', options_1, playlist_1);
 
@@ -51,7 +51,7 @@ var options_2 = {
     shuffle: 'on',
     volume: 0.5,
     autoplay: false,
-    preload: 'metadata'
+    preload: 'auto'
 };
 var p2 = ePlayer.darkTheme('p2', options_2, playlist_2);
 
