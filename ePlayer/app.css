@@ -1,0 +1,6 @@
+.test{
+    background: url(icons/play_arrow_black_18px.svg);
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+}

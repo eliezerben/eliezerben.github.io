@@ -1,0 +1,215 @@
+.ep-dt-container{
+    border-radius: 3px;
+	background-color: #424242;
+	display: inline-block;
+	white-space: nowrap;
+    box-shadow: 0px 3px 5px -2px;
+    
+    /*To prevent selection*/
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+.ep-dt-controls{
+	height: 30px;
+	padding: 5px;
+}
+
+.ep-dt-controls > *{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.ep-dt-controls > *:last-child{
+    margin-right: 5px;
+}
+
+.ep-dt-curTime, .ep-dt-totTime{
+    text-align: center;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 14px;
+    color: white;
+    margin-top: 1px;
+    margin-bottom: 0;
+    line-height: 30px;
+}
+
+.ePlayerVolWrapperBottom{
+    display: none;
+    background-color: #424242;
+    opacity: 0.9;
+    position: absolute;
+    top: 100%;
+    padding: 11px;
+    border-radius: 3px;
+}
+
+.ePlayerVolWrapperTop{
+    /*display: inline-block;*/
+    display: none;
+    background-color: #424242;
+    opacity: 0.9;
+    position: absolute;
+    bottom: 100%;
+    padding: 11px;
+    border-radius: 3px;
+}
+
+.ep-dt-playlist{
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+}
+
+.ep-dt-playlistItem{
+    list-style: none;
+    padding: 5px 10px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #565656;
+}
+
+.ep-dt-playlistItem:hover{
+    transition: background-color 0.3s ease;
+    background-color: #757575;
+}
+
+.ep-dt-playlistItemActive{
+    transition: background-color 0.5s ease;
+    background-color: #848484;
+}
+
+.ep-dt-playlist > .ep-dt-playlistItem + .ep-dt-playlistItem {
+    margin: 5px 0 0 0;
+}
+
+/* Icons */
+.ep-dt-controlIcon{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    position: relative;
+}
+
+.ep-dt-controlIcon.ep-dt-play{
+    width: 28px;
+    height: 28px;
+    background: url(icons/play_arrow_18px.svg) center/contain no-repeat;
+}
+
+.ep-dt-controlIcon.ep-dt-pause{
+    width: 28px;
+    height: 28px;
+    background: url(icons/pause_18px.svg) center/contain no-repeat;
+}
+
+.ep-dt-controlIcon.ep-dt-fastForward{
+    background: url(icons/fast_forward_18px.svg) center/contain no-repeat;
+}
+
+.ep-dt-controlIcon.ep-dt-fastRewind{
+    background: url(icons/fast_rewind_18px.svg) center/contain no-repeat;
+}
+
+.ep-dt-controlIcon.ep-dt-repeatOn{
+    background: url(icons/repeat_on_18px.svg) center/contain no-repeat;
+}
+
+.ep-dt-controlIcon.ep-dt-repeatOne{
+    background: url(icons/repeat_one_18px.svg) center/contain no-repeat;
+}
+
+.ep-dt-controlIcon.ep-dt-repeatOff{
+    background: url(icons/repeat_off_18px.svg) center/contain no-repeat;
+}
+
+.ep-dt-controlIcon.ep-dt-shuffleOn{
+    background: url(icons/shuffle_on_18px.svg) center/contain no-repeat;
+}
+
+.ep-dt-controlIcon.ep-dt-shuffleOff{
+    background: url(icons/shuffle_off_18px.svg) center/contain no-repeat;
+}
+
+.ep-dt-controlIcon.ep-dt-volumeLow{
+    background: url(icons/volume_low_18px.svg) center/contain no-repeat;
+}
+
+.ep-dt-controlIcon.ep-dt-volumeMid{
+    background: url(icons/volume_mid_18px.svg) center/contain no-repeat;
+}
+
+.ep-dt-controlIcon.ep-dt-volumeFull{
+    background: url(icons/volume_full_18px.svg) center/contain no-repeat;
+}
+
+.ep-dt-controlIcon.ep-dt-volumeMute{
+    background: url(icons/volume_mute_18px.svg) center/contain no-repeat;
+}
+
+/* ----- Slider ------ */
+
+.ep-dt-seekSlider{
+    width: 150px;
+	height: 5px;
+    display: inline-block;
+    position: relative;
+    border-radius: 3px;
+    background-color: #828282;
+}
+
+.ep-dt-seekTrack{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    border-radius: inherit;
+    cursor: pointer;
+    background-color: transparent;
+}
+.ep-dt-seekComp{
+    width: 0;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    border-radius: inherit;
+    background-color: white;
+}
+
+.ep-dt-volSlider{
+    width: 50px;
+	height: 5px;
+    display: inline-block;
+    position: relative;
+    border-radius: 3px;
+    background-color: #828282;
+}
+
+.ep-dt-volTrack{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    border-radius: inherit;
+    cursor: pointer;
+    background-color: transparent;
+}
+.ep-dt-volComp{
+    width: 0;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    border-radius: inherit;
+    background-color: white;
+}
+
+.ep-dt-seekSlider, .ep-dt-volSlider{
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
