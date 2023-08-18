@@ -10,12 +10,9 @@
     <script src='ePlayer.js'></script>
     <script src='darkTheme.js'></script>
     <style>
-        h1 {
-            text-align: center;
-            font-family: helvetica;
-        }
-        #p1, #p2 {
-            position:relative;
+        #p1,
+        #p2 {
+            position: relative;
             left: 50%;
             transform: translateX(-50%);
         }
@@ -23,60 +20,79 @@
 </head>
 
 <body>
-    <h1>ePlayer</h1>
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu metus ut lorem pharetra efficitur. Pellentesque a egestas est, ac laoreet libero. In imperdiet hendrerit tempus. Nulla suscipit dictum venenatis. Suspendisse facilisis, tortor vitae mollis convallis, nisl lectus auctor tortor, a maximus libero elit interdum lacus. Etiam fringilla dolor eu tristique placerat. Curabitur molestie aliquam lorem vitae bibendum. Donec volutpat sapien lacus, vitae varius quam varius quis. In in ipsum condimentum, vestibulum tortor nec, convallis turpis. Proin nec lectus neque. Cras est nibh, hendrerit eget mattis et, aliquam non nibh. Curabitur tellus ante, ultricies varius tempus ut, porttitor nec ante. </p>
-    <p> Nulla facilisi. Vivamus eu bibendum lectus. Mauris a diam sagittis, condimentum nibh sit amet, rhoncus lorem. Sed eget dictum erat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus ultricies magna quis lacus egestas congue. Donec tempus libero at tincidunt eleifend. Donec nisl nisl, pharetra nec libero dictum, posuere tristique risus. Sed suscipit neque nec rhoncus bibendum. Fusce tristique dignissim lorem, vel commodo nisi fermentum non. Vestibulum sapien neque, sagittis ut laoreet vitae, egestas eu arcu.</p>
+    <div class="container">
+        <h1>ePlayer Demo</h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu metus ut lorem pharetra efficitur.
+            Pellentesque a egestas est, ac laoreet libero. In imperdiet hendrerit tempus. Nulla suscipit dictum
+            venenatis. Suspendisse facilisis, tortor vitae mollis convallis, nisl lectus auctor tortor, a maximus libero
+            elit interdum lacus. Etiam fringilla dolor eu tristique placerat. Curabitur molestie aliquam lorem vitae
+            bibendum. Donec volutpat sapien lacus, vitae varius quam varius quis. In in ipsum condimentum, vestibulum
+            tortor nec, convallis turpis. Proin nec lectus neque. Cras est nibh, hendrerit eget mattis et, aliquam non
+            nibh. Curabitur tellus ante, ultricies varius tempus ut, porttitor nec ante. </p>
 
-    <div id='p1' class='ep-dt-container' >
-        <div data-ep-role='controls' class='ep-dt-controls'>
-            <div data-ep-role='fastRewind' class='ep-dt-controlIcon ep-dt-fastRewind'></div>
-            <div data-ep-role='play' class='ep-dt-controlIcon ep-dt-play'></div>
-            <div data-ep-role='fastForward' class='ep-dt-controlIcon ep-dt-fastForward'></div>
-            <p data-ep-role='curTime' class='ep-dt-curTime'>00:00</p>
-            <div data-ep-role='seekSlider' class='ep-dt-seekSlider'>
-                <div data-ep-role='seekComp' class='ep-dt-seekComp'></div>
-                <div data-ep-role='seekTrack' class='ep-dt-seekTrack'></div>
+        <div id='p1' class='ep-dt-container'>
+            <div data-ep-role='controls' class='ep-dt-controls'>
+                <div data-ep-role='fastRewind' class='ep-dt-controlIcon ep-dt-fastRewind'></div>
+                <div data-ep-role='play' class='ep-dt-controlIcon ep-dt-play'></div>
+                <div data-ep-role='fastForward' class='ep-dt-controlIcon ep-dt-fastForward'></div>
+                <p data-ep-role='curTime' class='ep-dt-curTime'>00:00</p>
+                <div data-ep-role='seekSlider' class='ep-dt-seekSlider'>
+                    <div data-ep-role='seekComp' class='ep-dt-seekComp'></div>
+                    <div data-ep-role='seekTrack' class='ep-dt-seekTrack'></div>
+                </div>
+                <p data-ep-role=totTime class='ep-dt-totTime'>00:00</p>
+                <div data-ep-role='repeat' class='ep-dt-controlIcon ep-dt-repeatOff'></div>
+                <div data-ep-role='shuffle' class='ep-dt-controlIcon ep-dt-shuffleOff'></div>
+                <div data-ep-role='volume' class='ep-dt-controlIcon ep-dt-volumeFull'></div>
+                <div data-ep-role='volSlider' class='ep-dt-volSlider'>
+                    <div data-ep-role='volComp' class='ep-dt-volComp'></div>
+                    <div data-ep-role='volTrack' class='ep-dt-volTrack'></div>
+                </div>
             </div>
-            <p data-ep-role=totTime class='ep-dt-totTime'>00:00</p>
-            <div data-ep-role='repeat' class='ep-dt-controlIcon ep-dt-repeatOff'></div>
-            <div data-ep-role='shuffle' class='ep-dt-controlIcon ep-dt-shuffleOff'></div>
-            <div data-ep-role='volume' class='ep-dt-controlIcon ep-dt-volumeFull'></div>
-            <div data-ep-role='volSlider' class='ep-dt-volSlider'>
-                <div data-ep-role='volComp' class='ep-dt-volComp'></div>
-                <div data-ep-role='volTrack' class='ep-dt-volTrack'></div>
-            </div>
+            <ol data-ep-role='playlist' class='ep-dt-playlist'></ol>
         </div>
-        <ol data-ep-role='playlist' class='ep-dt-playlist'></ol>
-    </div>
-    
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu metus ut lorem pharetra efficitur. Pellentesque a egestas est, ac laoreet libero. In imperdiet hendrerit tempus. Nulla suscipit dictum venenatis. Suspendisse facilisis, tortor vitae mollis convallis, nisl lectus auctor tortor, a maximus libero elit interdum lacus. Etiam fringilla dolor eu tristique placerat. Curabitur molestie aliquam lorem vitae bibendum. Donec volutpat sapien lacus, vitae varius quam varius quis. In in ipsum condimentum, vestibulum tortor nec, convallis turpis. Proin nec lectus neque. Cras est nibh, hendrerit eget mattis et, aliquam non nibh. Curabitur tellus ante, ultricies varius tempus ut, porttitor nec ante. </p>
-    <p> Nulla facilisi. Vivamus eu bibendum lectus. Mauris a diam sagittis, condimentum nibh sit amet, rhoncus lorem. Sed eget dictum erat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus ultricies magna quis lacus egestas congue. Donec tempus libero at tincidunt eleifend. Donec nisl nisl, pharetra nec libero dictum, posuere tristique risus. Sed suscipit neque nec rhoncus bibendum. Fusce tristique dignissim lorem, vel commodo nisi fermentum non. Vestibulum sapien neque, sagittis ut laoreet vitae, egestas eu arcu.</p>
-    <p> Proin id mi erat. Cras ut orci sit amet elit feugiat posuere. Nullam efficitur neque non felis volutpat, quis dapibus metus pellentesque. Phasellus ex quam, bibendum ut ligula sed, elementum auctor tellus. Praesent cursus eget metus eu placerat. Praesent metus tortor, vehicula ac mattis vitae, rutrum sed velit. Aenean interdum augue eu purus tristique, nec accumsan leo sodales. Duis sit amet augue sed purus tempus gravida. Nulla faucibus dolor vestibulum, hendrerit eros consectetur, rhoncus quam. Sed viverra eu lectus suscipit sodales.</p>
-    
-    <div id='p2' class='ep-dt-container' >
-        <div data-ep-role='controls' class='ep-dt-controls'>
-            <div data-ep-role='fastRewind' class='ep-dt-controlIcon ep-dt-fastRewind'></div>
-            <div data-ep-role='play' class='ep-dt-controlIcon ep-dt-play'></div>
-            <div data-ep-role='fastForward' class='ep-dt-controlIcon ep-dt-fastForward'></div>
-            <p data-ep-role='curTime' class='ep-dt-curTime'>00:00</p>
-            <div data-ep-role='seekSlider' class='ep-dt-seekSlider'>
-                <div data-ep-role='seekComp' class='ep-dt-seekComp'></div>
-                <div data-ep-role='seekTrack' class='ep-dt-seekTrack'></div>
-            </div>
-            <p data-ep-role=totTime class='ep-dt-totTime'>00:00</p>
-            <div data-ep-role='repeat' class='ep-dt-controlIcon ep-dt-repeatOff'></div>
-            <div data-ep-role='shuffle' class='ep-dt-controlIcon ep-dt-shuffleOff'></div>
-            <div data-ep-role='volume' class='ep-dt-controlIcon ep-dt-volumeFull'></div>
-            <div data-ep-role='volSlider' class='ep-dt-volSlider'>
-                <div data-ep-role='volComp' class='ep-dt-volComp'></div>
-                <div data-ep-role='volTrack' class='ep-dt-volTrack'></div>
-            </div>
-        </div>
-        <ol data-ep-role='playlist' class='ep-dt-playlist'></ol>
-    </div>
 
-    <p> Ut dignissim blandit tempus. In hac habitasse platea dictumst. Praesent a ipsum a nunc mattis imperdiet. Nullam venenatis ligula in facilisis aliquam. Vestibulum eu blandit nulla, non lacinia nunc. Duis pellentesque semper eros. Proin consectetur nulla mi, pharetra mattis elit condimentum eget. In euismod metus ex, in iaculis dui lobortis ut. Suspendisse sit amet feugiat tellus. Integer vitae lacus et ligula sollicitudin pretium. Cras et lobortis tellus. Proin semper mauris a risus ultricies, a faucibus diam elementum. Nullam a purus aliquam, mollis mi at, feugiat nisi. Phasellus sagittis ipsum vel aliquam sollicitudin. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-    <p> Phasellus lectus nisl, porttitor non tortor eget, pretium mollis mi. In quis urna tincidunt ipsum viverra semper. Morbi quis nisl justo. Vivamus vel eros lectus. Nullam non augue in risus ultrices tincidunt. Donec nisl est, pretium ut facilisis id, laoreet ut purus. Maecenas egestas feugiat nulla, ut iaculis sem ornare at. Suspendisse potenti. </p>
+        <p> Nulla facilisi. Vivamus eu bibendum lectus. Mauris a diam sagittis, condimentum nibh sit amet, rhoncus
+            lorem. Sed eget dictum erat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+            ridiculus mus. Vivamus ultricies magna quis lacus egestas congue. Donec tempus libero at tincidunt eleifend.
+            Donec nisl nisl, pharetra nec libero dictum, posuere tristique risus. Sed suscipit neque nec rhoncus
+            bibendum. Fusce tristique dignissim lorem, vel commodo nisi fermentum non. Vestibulum sapien neque, sagittis
+            ut laoreet vitae, egestas eu arcu.</p>
+
+        <div id='p2' class='ep-dt-container'>
+            <div data-ep-role='controls' class='ep-dt-controls'>
+                <div data-ep-role='fastRewind' class='ep-dt-controlIcon ep-dt-fastRewind'></div>
+                <div data-ep-role='play' class='ep-dt-controlIcon ep-dt-play'></div>
+                <div data-ep-role='fastForward' class='ep-dt-controlIcon ep-dt-fastForward'></div>
+                <p data-ep-role='curTime' class='ep-dt-curTime'>00:00</p>
+                <div data-ep-role='seekSlider' class='ep-dt-seekSlider'>
+                    <div data-ep-role='seekComp' class='ep-dt-seekComp'></div>
+                    <div data-ep-role='seekTrack' class='ep-dt-seekTrack'></div>
+                </div>
+                <p data-ep-role=totTime class='ep-dt-totTime'>00:00</p>
+                <div data-ep-role='repeat' class='ep-dt-controlIcon ep-dt-repeatOff'></div>
+                <div data-ep-role='shuffle' class='ep-dt-controlIcon ep-dt-shuffleOff'></div>
+                <div data-ep-role='volume' class='ep-dt-controlIcon ep-dt-volumeFull'></div>
+                <div data-ep-role='volSlider' class='ep-dt-volSlider'>
+                    <div data-ep-role='volComp' class='ep-dt-volComp'></div>
+                    <div data-ep-role='volTrack' class='ep-dt-volTrack'></div>
+                </div>
+            </div>
+            <ol data-ep-role='playlist' class='ep-dt-playlist'></ol>
+        </div>
+
+        <p> Ut dignissim blandit tempus. In hac habitasse platea dictumst. Praesent a ipsum a nunc mattis imperdiet.
+            Nullam venenatis ligula in facilisis aliquam. Vestibulum eu blandit nulla, non lacinia nunc. Duis
+            pellentesque semper eros. Proin consectetur nulla mi, pharetra mattis elit condimentum eget. In euismod
+            metus ex, in iaculis dui lobortis ut. Suspendisse sit amet feugiat tellus. Integer vitae lacus et ligula
+            sollicitudin pretium. Cras et lobortis tellus. Proin semper mauris a risus ultricies, a faucibus diam
+            elementum. Nullam a purus aliquam, mollis mi at, feugiat nisi. Phasellus sagittis ipsum vel aliquam
+            sollicitudin. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+        <p> Phasellus lectus nisl, porttitor non tortor eget, pretium mollis mi. In quis urna tincidunt ipsum viverra
+            semper. Morbi quis nisl justo. Vivamus vel eros lectus. Nullam non augue in risus ultrices tincidunt. Donec
+            nisl est, pretium ut facilisis id, laoreet ut purus. Maecenas egestas feugiat nulla, ut iaculis sem ornare
+            at. Suspendisse potenti. </p>
+    </div>
     <script src='app.js'></script>
 </body>
 

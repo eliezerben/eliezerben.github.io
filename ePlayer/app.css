@@ -1,6 +1,23 @@
-.test{
-    background: url(icons/play_arrow_black_18px.svg);
-    width: 30px;
-    height: 30px;
-    background-size: contain;
+body {
+    color: rgb(182, 182, 182);
+    font-family: sans-serif;
+    text-align: justify;
+    background-color: rgb(42, 0, 75);
+}
+
+.container {
+    background-color: rgb(28, 0, 50);
+    max-width: 600px;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 30px auto;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.ep-dt-container {
+    box-shadow: none !important;
 }
